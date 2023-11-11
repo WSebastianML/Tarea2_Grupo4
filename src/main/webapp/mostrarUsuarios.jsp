@@ -6,9 +6,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Mostrar Usuarios</title>
+        <link href="css/estilo2.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <h1>Lista Usuarios</h1>
+        
+        <div id="cuadro">
+        <p id="titulo">Lista de usuarios</p>
+        <hr>
+        <br/>
         
         <%
           List<Usuario> listaUsuarios = (List) request.getSession().getAttribute("listaUsuarios");
@@ -20,8 +25,13 @@
         <p>Id: <%=aux.getId() %></p>
         <p>Nombre: <%=aux.getNombre()%></p>
         <p>Apellido: <%=aux.getApellido()%></p>
+        <br>
         
         <% } %>
+        
+        
+        
+        </div>
         
           
     </body>
