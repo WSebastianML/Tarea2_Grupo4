@@ -20,8 +20,15 @@
         </form>
         
         <h1>Ver Usuarios</h1>
-        <form action="SrvUsuarios" method="GET">
+        <form action="SvUsuarios" method="GET">
             <button type="submit"> Ver </button>
+        </form>
+        
+        <h1>Eliminar Usuarios</h1>
+        <p>Ingrese el id del usuario</p>
+        <form action="SvEliminar" method="POST">
+            <p><label>Id: </label> <input type="text" name="id"> </p>
+            <button type="submit"> Eliminar </button>
         </form>
     </body>
 </html>

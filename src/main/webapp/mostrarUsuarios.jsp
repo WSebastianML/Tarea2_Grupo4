@@ -17,6 +17,9 @@
         %>
         
         <p><b>Usuario</b></p>
+        <p>Id: <%=aux.getId() %></p>
+        <p>Nombre: <%=aux.getNombre()%></p>
+        <p>Apellido: <%=aux.getApellido()%></p>
         
         <% } %>
         
